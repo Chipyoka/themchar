@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+
+/* Colors: */
+--dark-gray: #707070;
+--green: #7AFFD3;
+--white: #FFFFFF;
+--blue: #59C6F5;
+--white-02: #fbfbfb;
+--black: #3A3A3A;
+
+/* Fonts: */
+--font-primary: 'Montserrat', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  color: var(--black);
+  max-height: 100dvh;
+  height: 100dvh;
+  font-family: var(--font-primary);
+  background: radial-gradient(closest-side at 50% 53%, #EAF9FF 0%, var(--white-02) 90%);
+  background-repeat: no-repeat;
+  background-size: 150% 150%;
+  opacity: 1;
+}
+
+
+
+
+footer{
+  color: var(--dark-gray);
+  font-weight: 500;
+  font-size: .85rem;
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.row-gap{
+  row-gap: 1rem;
+}
+.column-gap{
+  column-gap: 1rem;
+}
+
+.btn-primary{
+  cursor: pointer;
+
+  padding: .8em 2em;
+  
+  border: 1px solid var(--black);
+  background: transparent linear-gradient(251deg, var(--blue) 0%, #5BC9F3 0%, var(--green) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 52px;
+  opacity: 1;
+
+  text-align: center;
+  font: normal normal normal 18px/16px Montserrat;
+  font-weight: 500 !important;
+  letter-spacing: 0px;
+  /* color: #FFFFFF; */
+}
+
+.btn-secondary{
+  cursor: pointer;
+  padding: .8em 2em;
+
+  /* UI Properties */
+  border: 2px solid var(--blue);
+  border: 2px solid #59C6F5;
+  border-radius: 52px;
+  opacity: 1;
+  background: none;
+
+  color: var(--black);
+  text-align: center;
+  font: normal normal normal 18px/16px Montserrat;
+  font-weight: 500 !important;
+  letter-spacing: 0px;
+}
+
+.start-chat{
+  cursor: pointer;
+  width: 265px;
+  height: 80px;
+  border: 1px solid var(--black);
+  /* UI Properties */
+  background: transparent linear-gradient(255deg, var(--blue) 0%, #5BC9F3 0%, var(--green) 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(255deg, #59C6F5 0%, #5BC9F3 0%, #7AFFD3 100%) 0% 0% no-repeat padding-box;
+  border-radius: 52px;
+  opacity: 1;
+
+  /* color: var(--white); */
+  text-align: center;
+  font: normal normal normal 18px/16px Montserrat;
+  font-weight: 500 !important;
+  letter-spacing: 0px;
+}
+
+.btn-primary:focus, .btn-secondary:focus, .start-chat:focus{
+  outline: none;
+}
+
+
+.btn-primary:hover, .btn-secondary:hover, .start-chat:hover{
+  opacity: .90;
+}
+
+
+
+nav{
+  /* background-color: var(--white); */
+  background-color: none;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); */
+
+}
+
+.home{
+  min-height: 100%;
+  text-align: center;
+  justify-content: center;
+
+  /* border: 2px solid red; */
+ height: 70dvh;
+}
+
+.home h1{
+  color: var(--black);
+  text-align: center;
+  font: normal normal normal 100px/100px Montserrat;
+  letter-spacing: -7.5px;
+}
+.home h1 > span{
+  color: var(--blue);
+  font-weight: bold;
+
+}
+.home p {
+  margin:2em 1em;
+  font: normal normal normal 18px/30px Montserrat;
+  letter-spacing: 0.18px;
+
+}
+
