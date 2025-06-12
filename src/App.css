@@ -1,38 +1,104 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+
+/* Colors: */
+--dark-gray: #707070;
+--green: #7AFFD3;
+--white: #FFFFFF;
+--blue: #59C6F5;
+--white-02: #F2F2F2;
+--black: #3A3A3A;
+
+/* Fonts: */
+--font-primary: 'Montserrat', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 1920px;
+  height: 1080px;
+  font-family: var(--font-primary);
+  max-height: 96dvh;
+  background: transparent radial-gradient(closest-side at 50% 53%, #EAF9FF 0%, var(--white-02) 90%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.row-gap{
+  row-gap: 1rem;
+}
+.column-gap{
+  column-gap: 1rem;
+}
+
+.btn-primary{
+  cursor: pointer;
+
+  padding: .8em 2em;
+
+  border:none;
+  background: transparent linear-gradient(251deg, var(--blue) 0%, #5BC9F3 0%, var(--green) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 52px;
+  opacity: 1;
+
+  color: var(--white);
+  text-align: center;
+  font: normal normal bold 18px/16px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.btn-secondary{
+  padding: .8em 2em;
+
+  /* UI Properties */
+  border: 2px solid var(--blue);
+  border: 2px solid #59C6F5;
+  border-radius: 52px;
+  opacity: 1;
+  background: none;
+
+  color: var(--black);
+  text-align: center;
+  font: normal normal normal 18px/16px Montserrat;
+  font-weight: 500 !important;
+  letter-spacing: 0px;
+}
+
+.btn-primary:focus, .btn-secondary:focus{
+  outline: none;
+}
+
+
+.btn-primary:hover, .btn-secondary:hover{
+  opacity: .85;
+}
+
+.home{
+  min-height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  /* background-color: var(--white); */
+  background-color: none;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); */
+
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
