@@ -5,10 +5,16 @@ const Home = () => {
     return(
         <>
             <Navbar />
-            <div className="home">
-                <h1>Welcome to Themchar AI</h1>
-                <p>Ai-powered stress and depression detection chatbot for university students.</p>
-                <code> By Jhalogix Solutions X Blackgeek</code>
+            <div className="home flex">
+                <div>
+                    <h1>
+                        Your wellbeing
+                        <br />
+                        <b>Companion</b><span>.</span>
+                    </h1>
+                    <p className="mt-1">Ai-powered stress and depression detection chatbot for university students.</p>
+                    <button className="start-chat"> Start Chat</button>
+                </div>
             </div>
         </>
     )
